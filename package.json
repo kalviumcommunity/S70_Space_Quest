@@ -1,0 +1,15 @@
+{
+  "name": "s70_space_quest",
+  "version": "1.0.0",
+  "description": "**Space Quest: The Ultimate Space Trivia Adventure**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
