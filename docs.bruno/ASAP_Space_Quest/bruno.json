@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "ASAP_Space_Quest",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
