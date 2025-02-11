@@ -5,7 +5,16 @@ meta {
 }
 
 post {
-  url: http://localhost:3000/api/users
-  body: none
+  url: http://localhost:3000/users
+  body: json
   auth: none
+}
+
+body:json {
+  {
+    "username": "astro_gamer1",
+    "email": "astro12@example.com",
+    "password": "hashed_password",
+    "userId": "U12356"
+  }
 }

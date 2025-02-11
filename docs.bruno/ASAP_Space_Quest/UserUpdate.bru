@@ -5,11 +5,17 @@ meta {
 }
 
 put {
-  url: http://localhost:3000/api/users/:id
-  body: none
+  url: http://localhost:3000/users/:id
+  body: json
   auth: none
 }
 
 params:path {
-  id: 
+  id: 67a58568f0229a2bcbe8e5a9
+}
+
+body:json {
+  {
+    "username": "astro_gamer12"
+  }
 }
