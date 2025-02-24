@@ -1,6 +1,6 @@
 import React from "react";
-import ShootingStars from "../components/ShootingStars";
-import TwinklingStars from "../components/TwinklingStars";
+import ShootingStars from "../components/LandingPageComponents/ShootingStars";
+import TwinklingStars from "../components/LandingPageComponents/TwinklingStars";
 import { Link } from "react-router-dom";
 import "./LandingPage.css";
 
@@ -12,7 +12,7 @@ const LandingPage = () => {
       <ShootingStars />
 
       {/* Navigation Bar */}
-      <nav className="navbar">
+      {/* <nav className="navbar">
         <div className="highlight logo"> Space Quest</div>
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
@@ -20,7 +20,7 @@ const LandingPage = () => {
           <li><Link to="/explore">Explore</Link></li>
           <li><Link to="/login" className="cta-btn">Sign In</Link></li>
         </ul>
-      </nav>
+      </nav> */}
 
       {/* Hero Section */}
       <div className="hero">

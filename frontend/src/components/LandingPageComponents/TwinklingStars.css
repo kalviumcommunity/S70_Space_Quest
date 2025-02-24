@@ -4,7 +4,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1; /* Ensure it is behind other elements */
+  z-index: 1; 
   overflow: hidden; /* Hide overflow to prevent scrollbar */
 }
 

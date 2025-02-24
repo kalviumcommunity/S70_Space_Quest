@@ -1,3 +1,3 @@
 import LandingPage from "./pages/LandingPage";
-
-export{LandingPage}
+import Navbar from './components/main/Navbar'
+export{LandingPage,Navbar}
