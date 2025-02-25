@@ -3,8 +3,10 @@ const app = express()
 const connectDatabase = require('./database'); 
 const mongoose = require("mongoose");
 const userRoutes = require('./routes/userRoutes');
+const cors = require('cors');
 const port = process.env.PORT || 3000;
 
+app.use(cors());
 app.use(express.json());
 // Connect to the database
 connectDatabase();

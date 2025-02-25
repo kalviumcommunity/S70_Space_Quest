@@ -1,0 +1,26 @@
+.users {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.user {
+    /* background-color: radial-gradient(circle, #6a0dad, #000000); */
+    background-color: radial-gradient(circle at center, #0a0f2d 10%, #000);
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;  /* Change from width to max-width for responsiveness */
+    width: 100%;  /* Makes sure the div takes up 100% of available space */
+    text-align: center;
+    word-wrap: break-word;  /* Ensures long words break and don't overflow */
+}
+
+@media (max-width: 768px) {
+    .user {
+        max-width: 90%;  /* On smaller screens, reduce the width */
+    }
+}
