@@ -4,6 +4,7 @@ import TwinklingStars from "../components/LandingPageComponents/TwinklingStars";
 import { Link } from "react-router-dom";
 import "./LandingPage.css";
 
+
 const LandingPage = () => {
   return (
     <div className="landing-page">
@@ -11,16 +12,6 @@ const LandingPage = () => {
       <TwinklingStars />
       <ShootingStars />
 
-      {/* Navigation Bar */}
-      {/* <nav className="navbar">
-        <div className="highlight logo"> Space Quest</div>
-        <ul className="nav-links">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/features">Features</Link></li>
-          <li><Link to="/explore">Explore</Link></li>
-          <li><Link to="/login" className="cta-btn">Sign In</Link></li>
-        </ul>
-      </nav> */}
 
       {/* Hero Section */}
       <div className="hero">
@@ -30,6 +21,7 @@ const LandingPage = () => {
         <p className="subheading">
           Explore the cosmos, test your knowledge, and embark on an interstellar journey.
         </p>
+        
         <Link to="/get-started" className="start-btn">
           Get Started 
         </Link>
