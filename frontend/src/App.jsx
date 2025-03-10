@@ -1,20 +1,18 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { LandingPage, Navbar, UserPage, SignUp } from './Routes';
 
-import './App.css'
-import { LandingPage,Navbar,UserPage ,SignUp} from './Routes'
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
-function App() {
-  
+const App = () => {
   return (
-    <BrowserRouter>
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/users" element={<UserPage />} />
-      <Route path="/sign-up" element={<SignUp />} />
-    </Routes>
-      
-    </BrowserRouter>
-  )
-}
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/users" element={<UserPage />} />
+        <Route path="/sign-up" element={<SignUp />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;

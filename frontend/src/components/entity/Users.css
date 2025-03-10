@@ -1,26 +1,95 @@
 .users {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+  z-index: 10; /* Ensure the users container is above other elements */
 }
 
 .user {
-    /* background-color: radial-gradient(circle, #6a0dad, #000000); */
-    background-color: radial-gradient(circle at center, #0a0f2d 10%, #000);
-    color: white;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 600px;  /* Change from width to max-width for responsiveness */
-    width: 100%;  /* Makes sure the div takes up 100% of available space */
-    text-align: center;
-    word-wrap: break-word;  /* Ensures long words break and don't overflow */
+  background: radial-gradient(circle, #6a0dad, #000000); /* Radial gradient background */
+  color: white; /* Text color */
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  text-align: center;
+  position: relative;
+  z-index: 20; /* Ensure the user cards are above other elements */
 }
 
-@media (max-width: 768px) {
-    .user {
-        max-width: 90%;  /* On smaller screens, reduce the width */
-    }
+.update-btn, .delete-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  color: white;
+  background-color: #6a0dad;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 30; /* Ensure the buttons are above other elements */
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+}
+
+.update-btn:hover, .delete-btn:hover {
+  opacity: 0.8;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: radial-gradient(circle, #6a0dad, #000000); /* Match user card background */
+  color: white; /* Match user card text color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.popup-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start */
+}
+
+.popup-content label {
+  margin-bottom: 5px; /* Add spacing between label and input */
+  font-weight: bold; /* Make label bold */
+}
+
+.popup-content input {
+  padding: 8px;
+  margin-bottom: 15px; /* Add spacing between input fields */
+  color: black; /* Change font color to black */
+  width: 100%; /* Make input fields full width */
+}
+
+.popup-content button {
+  padding: 10px;
+  margin: 5px 10px; /* Adjust margin for buttons */
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  opacity: 0.8;
 }
